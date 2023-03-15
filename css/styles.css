@@ -1,0 +1,377 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+:root {
+  --primary-text-color: rgba(67, 68, 85, 1);
+  --title-text-color: #2e2f42;
+  --accent-color: #404bbf;
+  --backgroun-color: #ffffff;
+  --text-color-1: #4d5ae5;
+  --address-color: #434455;
+  --footer-text-color: #e7e9fc;
+  --additional-color: #f4f4fd;
+}
+body {
+  background-color: var(--backgroun-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.02em;
+  font-size: 16px;
+  line-height: 1.33;
+}
+.list {
+  list-style: none; /* take out dots from list */
+}
+.section-title {
+  margin-bottom: 72px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ----------------Header----------------- */
+.page-header {
+  padding: 24px 0px;
+  border-bottom: 1px solid var(--footer-text-color);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  margin-right: auto; /*we push the addres to the right*/
+}
+.site-nav {
+  display: flex;
+  gap: 40px;
+}
+
+.address {
+  display: flex;
+  gap: 40px;
+}
+
+/* -----------------logo------------------ */
+.logo {
+  margin-right: 76px;
+
+  text-decoration: none;
+  color: var(--title-text-color);
+  font-family: Raleway, sans-serif;
+  letter-spacing: 0.03em;
+
+  /* font-weight: 800; */
+  font-size: 18px;
+  line-height: 1.33;
+  text-transform: uppercase;
+}
+.logo-part {
+  color: var(--text-color-1);
+}
+
+/* --------------Site nav---------------- */
+.site-nav .link {
+  text-decoration: none;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.site-nav .link:active,
+.site-nav .link:focus,
+.site-nav .link:hover {
+  color: var(--accent-color);
+}
+.address .link {
+  text-decoration: none;
+  color: var(--address-color);
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.address .link:active,
+.address .link:focus,
+.address .link:hover {
+  color: var(--accent-color);
+}
+
+/* ------------------Section 1------------- */
+.hero {
+  background-color: var(--title-text-color);
+  height: 600px;
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+.hero-title {
+  color: var(--backgroun-color);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+
+  margin: 0 auto;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+}
+
+.hero .button {
+  display: block;
+  width: 169px;
+  height: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  font-family: inherit; /* need it for inheritance from body part */
+  color: var(--backgroun-color);
+  background-color: var(--text-color-1);
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.hero .button:hover,
+.hero .button:focus,
+.hero .button:active {
+  background-color: var(--accent-color);
+}
+
+/* --------------Section 2,3,4------------- */
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* -----------Section 2 strengths---------- */
+.section-strengths {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.strengths .title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.strengths {
+  display: flex;
+  gap: 24px;
+}
+
+.strength {
+  width: calc((100% - 72px) / 3);
+}
+
+.strength-title {
+  margin-bottom: 8px;
+}
+
+/* ---------------Section 3---------------- */
+.section-features {
+  padding-bottom: 120px;
+}
+
+.card-list {
+  display: flex;
+  gap: 24px;
+}
+.card-list > .image-box {
+  width: calc((100% - 48) / 3);
+}
+
+/* ---------------Section 4---------------- */
+.team {
+  background-color: var(--additional-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.teammembers {
+  display: flex;
+  gap: 24px;
+}
+.teammembers .team-member {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+}
+.teammembers-description {
+  background-color: #ffffff;
+  flex-basis: calc(100% / 4 - 24px);
+}
+.team-photo {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.team-member {
+  margin-bottom: 8px;
+}
+.team .team-position {
+  text-align: center;
+}
+
+/*--------------container-----------------*/
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* ---------------Footer----------------- */
+.footer {
+  background-color: var(--title-text-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-content {
+  width: 264px;
+}
+
+.footer-text {
+  color: var(--footer-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.footer .logo {
+  display: block;
+  margin-bottom: 16px;
+  color: var(--additional-color);
+}
+
+/*Portfolio*/
+/* ----------------Buttons----------------- */
+
+.portfolio-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+  gap: 24px;
+}
+
+.button-portfolio {
+  padding: 12px 24px;
+  border: 1px solid var(--footer-text-color);
+  border-radius: 4px;
+
+  font-family: inherit; /*need it for inheritance from body part*/
+  color: var(--text-color-1);
+  background-color: var(--additional-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus,
+.button-portfolio:active {
+  color: var(--backgroun-color);
+  background-color: var(--accent-color);
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+.portfolio-links {
+  width: calc((100 - 48px) / 3);
+}
+
+.portfolio h2 {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.portfolio-links .title {
+  margin-bottom: 8px;
+}
+
+/* -----------Portfolio list------------- */
+
+.list .list-portfolio {
+  text-decoration: none; /* take out all underlines */
+  font-family: inherit; /* need it for inheritance from body part */
+  color: var(--title-text-color);
+  font-size: 20px;
+  line-height: 1.2;
+}
+.list-portfolio .title {
+  font-weight: 500;
+}
+.list .list-text {
+  font-family: inherit;
+  color: var(--address-color);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.services {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-right: 1px solid var(--footer-text-color);
+  border-left: 1px solid var(--footer-text-color);
+  border-bottom: 1px solid var(--footer-text-color);
+}
