@@ -361,12 +361,13 @@ body {
 }
 .footer-container {
   display: flex;
-  gap: 120px;
 }
 .footer-content {
   width: 264px;
 }
-
+.footer-icons {
+  margin-left: 120px;
+}
 .footer-text {
   color: var(--footer-text-color);
   font-size: 16px;
